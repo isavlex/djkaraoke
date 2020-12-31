@@ -1,0 +1,40 @@
+mixin orderCall()
+    //- Form
+    button(
+      class="button fixed"
+      onClick="$('#call-request').arcticmodal(); yaCounter44743726.reachGoal('call_counter'); return true;"
+    )
+      span Заказать звонок
+    .g-hidden
+      .b-modal#call-request
+        .b-modal_close.arcticmodal-close X
+        .modal-form.center
+          .call-form
+            h4 Заказать бесплатный звонок!
+            h3
+              a(href="tel:+79164942042" class="white-link")
+            p.correct__name
+            input(
+              type="text"
+              required="required"
+              class="inputbox"
+              name="name"
+              placeholder="Ваше имя"
+            )
+            p.correct__phone
+            input(
+              type="tel"
+              required="required"
+              class="inputbox phone-box"
+              name="phone"
+              placeholder="Телефон"
+              value="+7"
+            )
+            input(
+              type="submit"
+              id="callback"
+              class="button button_padding"
+              value="Перезвоните мне"
+            )
+    //- Form-end
+    

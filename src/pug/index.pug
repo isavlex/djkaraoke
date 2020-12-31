@@ -1,0 +1,152 @@
+extends layouts/main
+
+block varibles
+  -var metaDescription = 'Все для Вашего мероприятия, исполнители напрямую.'
+  -var metaKeywords = 'аренда караоке в москве, аренда караоке оборудования, выездное караоке, диджей на свадьбу, ведущий и диджей на свадьбу недорого, ведущий и диджей недорого, ведущий свадьба, тамада на свадьбу, ведущий на корпоратив, ведущий недорого, диджей на юбилей в москве, диджей недорого,поющий ведущий, певец на свадьбу, певец на юбилей,'
+  -var pageTitle = 'Аренда караоке, диджеи, ведущие'
+  -var cssPath = '../scss/style.scss'
+  -var jsPath = '../js/app.js'
+  -var ymetricaPath = '../js/ymetrica.js'
+  -var icon = '../img/ico.ico'
+
+block content
+  +jumping-buttons()
+  +fb-root()
+  +y-metrica(44743726)
+  header.header
+    +orderCall()
+    .wrap
+      +menu()
+      h1.h1-indent.center
+        strong Аренда караоке, ведущий и диджей музыканты на Ваше мероприятие<br />в Москве и области
+      h2.center#karaoke Комплекты караоке
+      .columns
+        .columns__column
+          h3.center Стандарт
+          img(src="../img/standart.png", alt="Стандарт", srcset="")
+          ul.columns__set
+            li.columns__item
+              <strong>Караоке</strong> более 150 000 песен
+            li.columns__item Акустическая система 1000 вт
+            li.columns__item Микшерный пульт
+            li.columns__item 2 микрофона shure 58
+            li.columns__item Проектор и экран "170 см
+            li.columns__item
+              <strong>Dj/Звукорежиссер</strong> 6 ч.
+            li.columns__item Вокальная обработка
+            li.columns__item -
+            li.columns__item -
+            li.columns__item -
+          p.columns__price.center Цена: 14900 ₽
+        .columns__column
+          h3.center Максимум
+          img(src="../img/max.png", alt="Максимум", srcset="")
+          ul.columns__set
+            li.columns__item
+              <strong>Караоке</strong> более 150 000 песен
+            li.columns__item Акустическая система 1000 вт
+            li.columns__item Микшерный пульт
+            li.columns__item 2 микрофона shure 58
+            li.columns__item Проектор и экран "170 см
+            li.columns__item
+              <strong>Dj/Звукорежиссер</strong> 6 ч.
+            li.columns__item Вокальная обработка
+            li.columns__item Бэквокалист
+            li.columns__item Сабвуфер
+            li.columns__item Свет и дым машина
+          p.columns__price.center Цена: 19900 ₽
+  .sets
+    .wrap
+      h2.center#dj Комплекты DJ
+      .columns
+        .columns__column.columns__vertical
+          img(src="../img/dj.jpg", alt="dj", class="columns__img-size")
+          p.columns__p-decor.center
+            <strong>DJ</strong> + НОУТБУК / 6ч
+          .columns__p-decor.center Цена: 9900 ₽
+        .columns__column.columns__vertical
+          img(src="../img/leading.jpg", alt="leading", class="columns__img-size")
+          p.columns__p-decor.center
+            <strong>DJ</strong> + ЗВУК + СВЕТ / 6ч<br />ДО 100 ЧЕЛОВЕК
+          .columns__p-decor.center Цена: 14900 ₽
+        .columns__column.columns__vertical
+          img(src="../img/individual.jpg", alt="individual", class="columns__img-size")
+          p.columns__p-decor.center
+            <strong>DJ</strong> + ЗВУК + СВЕТ + ШОУ<br />КОЛИЧЕСТВО НЕОГРАНИЧЕННО
+          .columns__p-decor.center Индивидуально
+      .columns
+        .columns__column.columns__column_yt
+          .you-tube__relation
+            .you-tube__ratio
+            iframe(
+              class="you-tube__content"
+              src="https://www.youtube.com/embed/VtqUC3rvhks"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            )
+        .columns__column.columns__column_yt
+          .you-tube__relation
+            .you-tube__ratio
+            iframe(
+              class="you-tube__content"
+              src="https://www.youtube.com/embed/bAYPViYuTGs"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            )
+  .leadings
+    .wrap
+      h2.center#leading
+      .columns
+        .columns__column.columns__column_yt
+          .you-tube__relation
+            .you-tube__ratio
+            iframe(
+              class="you-tube__content"
+              src="https://www.youtube.com/embed/TNwfr313Tsg"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            )
+          h3.center
+            <strong>Ведущий</strong> - Евгений Александров
+          ul.columns__set
+            li - педагог по образованию
+            li - музыкант по призванию
+            li - воплотит любую Вашу идею
+        .columns__column.columns__column_yt
+          .you-tube__relation
+            .you-tube__ratio
+            iframe(
+              class="you-tube__content"
+              src="https://www.youtube.com/embed/aMVRM9ZzuGk"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            )
+          h3.center
+            <strong>Ведущий</strong> - Лев Читков
+          ul.columns__set
+            li - лучший ведущий на английском в Москве
+            li - найдет общий язык с любой аудиторией
+            li - голос LOVE RADIO и MTV
+  .footer
+    .wrap
+      h2.center#portfolio Наше портфолио
+      .columns.slide-show#lightgallery
+        +galleryImg('img', 30)
+      h3.center#comments Отзывы
+      .comments
+        div(
+          class="fb-comments"
+          data-href="https://djkaraoke.ru/"
+          data-width="100%"
+          data-numposts="5"
+        )
+      .contacts
+        .center Контакты
+        ul
+          li.contacts__item E-mail: <a class="white-link" href="mailto:e.alexandrov177@yandex.ru">e.alexandrov177@yandex.ru</a>
+          li.contacts__item Адрес: ул. Нижняя Красносельская, д. 45/17
+      .copyright
+        p.center.copyright__text djkaraoke.ru © Все права защищены<br />2009 - 2021
+block scripts
+  script(src="../js/jquery-1.7.1.min.js")
+  script(src= jsPath)

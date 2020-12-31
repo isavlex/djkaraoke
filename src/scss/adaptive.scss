@@ -1,0 +1,55 @@
+@media only screen and (max-width: 812px) {
+  #button-nav {
+    display: block;
+    font-size: 40px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 10px;
+  }
+
+  .gorizontal-nav__link {
+    padding: 15px 1px;
+    font-size: 14px;
+  }
+
+  .columns {
+    justify-content: center;
+  }
+
+  .columns__column {
+    margin-bottom: 20px;
+  }
+
+  .columns__column_yt {
+    width: 100%;
+  }
+
+  .columns__vertical {
+    display: block;
+    text-align: center;
+  }
+  .fixed {
+    top: 55px;
+    right: 0;
+  }
+
+  .modal-form {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .modal-form h3 {
+    font-size: 16px;
+  }
+
+  .modal-form form {
+    width: auto;
+  }
+  .social {
+    position: fixed;
+    top: 59px;
+    left: 10px;
+  }
+}

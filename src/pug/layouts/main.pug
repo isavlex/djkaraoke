@@ -1,0 +1,26 @@
+block varibles
+include ../../components/components
+include ../utils/mixins
+
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(
+    name="description"
+    content= metaDescription
+    )
+    meta(
+    name="keywords"
+    content= metaKeywords
+    )
+    meta(property="fb:admins" content="{100001835656351}" )
+    meta(property="fb:admins" content="{100001889510378}" )
+    meta(name="yandex-verification" content="b9d6f5bc943222cd" )
+    script(src= ymetricaPath)
+    link(rel="shortcut icon" href= icon)
+    title= pageTitle
+    link(rel="stylesheet" href= cssPath)
+  body
+    block content
+    block scripts

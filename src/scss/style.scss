@@ -1,0 +1,177 @@
+@import '../components/components';
+@import 'app';
+@import 'callback';
+@import 'adaptive';
+@import '../../node_modules/lightgallery.js/dist/css/lightgallery.min.css';
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: gray;
+  color: white;
+  /*background: url(../img/back.jpg) no-repeat;
+  background-size: cover; */
+  font-family: open-sans, sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+h2,
+h3 {
+  padding: 10px;
+}
+
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/*you-tube*/
+.you-tube__relation {
+  position: relative;
+}
+
+.you-tube__ratio {
+  padding-top: 56.25%;
+  height: 0;
+}
+
+.you-tube__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/*Header*/
+
+.header {
+  background-image: url(../img/hall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.h1-indent {
+  padding-top: 130px;
+  margin-bottom: 170px;
+}
+
+.columns {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.columns__column {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.columns__column_yt {
+  width: 470px;
+}
+
+.columns__set {
+  font-style: italic;
+  list-style: none;
+  padding: 10px;
+}
+
+.columns__item {
+  margin-bottom: 10px;
+}
+
+.columns__price {
+  font-style: italic;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.columns__vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.columns__img-size {
+  width: 255px;
+  height: 183px;
+}
+
+.columns__p-decor {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.columns__img-gallery {
+  width: 150px;
+  height: 100px;
+  vertical-align: top;
+  margin: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/* Header-end */
+
+/* Sets */
+
+.sets {
+  background-image: url(../img/micher.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+}
+/* Sets-end */
+
+/* Leadings */
+
+.leadings {
+  background-image: url(../img/hall.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+/* Leadings-end */
+
+/* Footer */
+
+.footer {
+  background-image: url(../img/people.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+}
+
+.contacts__item {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  list-style: none;
+}
+
+.white-link {
+  color: white;
+}
+
+.copyright {
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+
+.copyright__text {
+  font-size: 13px;
+}
+
+.comments {
+  background-color: white;
+}
+/* Footer-end */
