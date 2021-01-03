@@ -3058,10 +3058,22 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
+izimodal@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/izimodal/-/izimodal-1.5.1.tgz#a49145030d8d9edfc60dfc35ae1758e4cf8502f1"
+  integrity sha512-DqqGUd741tAqJnWZMQRgixlgtSB6tb/HhfddmlsFWE5P7sckF2SmKVyyttpAdBdN5LUzQiF/R/+IjJw0TS5oTA==
+  dependencies:
+    jquery "~2"
+
 jquery@^3.5.1:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
   integrity sha512-XwIBPqcMn57FxfT+Go5pzySnm4KWkT1Tv7gjrpT1srtf8Weynl6R273VJ5GjkRb51IzMp5nbaPjJXMWeju2MKg==
+
+jquery@~2:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-2.2.4.tgz#2c89d6889b5eac522a7eea32c14521559c6cbf02"
+  integrity sha1-LInWiJterFIqfuoywUUhVZxsvwI=
 
 js-stringify@^1.0.2:
   version "1.0.2"
@@ -3211,6 +3223,16 @@ levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
+
+lg-thumbnail.js@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/lg-thumbnail.js/-/lg-thumbnail.js-1.2.0.tgz#863bda569ee868229a4f80152e4c026a4c47f686"
+  integrity sha512-qmNFbjLv1spCf3sB8HRX9vW8UtKcgq7qJIg10jLqCozSquhTJwSPUb5vyPgl3cZpgLFjRMiOpIRgBjGrX4inNQ==
+
+lg-video.js@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/lg-video.js/-/lg-video.js-1.3.0.tgz#cb3ffb06e949e5e8a21667ae33faf8d4bfe5e53e"
+  integrity sha512-9P/oxBwHhEqHvPqnjxdQFihMw6AlIllHdOXUDAsr+t6D9u9Bcabsncavap6B8QeCVS+uU2wmgW9GFTfT5sg5Vg==
 
 lightgallery.js@^1.4.0:
   version "1.4.0"

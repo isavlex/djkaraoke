@@ -74,59 +74,45 @@ block content
           p.columns__p-decor.center
             <strong>DJ</strong> + ЗВУК + СВЕТ + ШОУ<br />КОЛИЧЕСТВО НЕОГРАНИЧЕННО
           .columns__p-decor.center Индивидуально
-      .columns
-        .columns__column.columns__column_yt
-          .you-tube__relation
-            .you-tube__ratio
-            iframe(
-              class="you-tube__content"
-              src="https://www.youtube.com/embed/VtqUC3rvhks"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            )
-        .columns__column.columns__column_yt
-          .you-tube__relation
-            .you-tube__ratio
-            iframe(
-              class="you-tube__content"
-              src="https://www.youtube.com/embed/bAYPViYuTGs"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            )
+      ul#video-gallery.columns.video-gallery
+        li(data-src="https://www.youtube.com/embed/VtqUC3rvhks" class="video-gallery__item")
+          .video-gallery__poster
+            img(src="../img/pics/plug.jpg", alt="karaoke", class="video-gallery__img")
+            div
+              img(src="../img/play-button.png" class="video-gallery__plug" alt="plug")
+        li(data-src="https://www.youtube.com/embed/bAYPViYuTGs" class="video-gallery__item")
+          .video-gallery__poster
+            img(src="../img/pics/plug2.jpg", alt="dj", class="video-gallery__img")
+            div
+              img(src="../img/play-button.png" class="video-gallery__plug" alt="plug")
+
   .leadings
     .wrap
       h2.center#leading
-      .columns
-        .columns__column.columns__column_yt
-          .you-tube__relation
-            .you-tube__ratio
-            iframe(
-              class="you-tube__content"
-              src="https://www.youtube.com/embed/TNwfr313Tsg"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            )
-          h3.center
-            <strong>Ведущий</strong> - Евгений Александров
-          ul.columns__set
-            li - педагог по образованию
-            li - музыкант по призванию
-            li - воплотит любую Вашу идею
-        .columns__column.columns__column_yt
-          .you-tube__relation
-            .you-tube__ratio
-            iframe(
-              class="you-tube__content"
-              src="https://www.youtube.com/embed/aMVRM9ZzuGk"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            )
-          h3.center
-            <strong>Ведущий</strong> - Лев Читков
-          ul.columns__set
-            li - лучший ведущий на английском в Москве
-            li - найдет общий язык с любой аудиторией
-            li - голос LOVE RADIO и MTV
+      ul.columns#leadings-video.video-gallery
+        li(data-src="https://www.youtube.com/embed/TNwfr313Tsg"  data-sub-html=".video-gallery__caption" class="video-gallery__item")
+          .video-gallery__poster
+            img(src="../img/pics/plug-ea.jpg", alt="Ведущий Евгений Александров", class="video-gallery__img")
+            div
+              img(src="../img/play-button.png" class="video-gallery__plug" alt="plug")
+          .video-gallery__caption
+            h3.center <strong>Ведущий</strong> - Евгений Александров
+            ul.columns__set
+              li - педагог по образованию
+              li - музыкант по призванию
+              li - воплотит любую Вашу идею
+        li(data-src="https://www.youtube.com/embed/aMVRM9ZzuGk" data-sub-html=".video-gallery__caption" class="video-gallery__item")
+          .video-gallery__poster
+            img(src="../img/pics/plug-lc.jpg", alt="Ведущий Лев Читков", class="video-gallery__img")
+            div
+              img(src="../img/play-button.png" class="video-gallery__plug" alt="plug")
+          .video-gallery__caption
+            h3.center <strong>Ведущий</strong> - Лев Читков
+            ul.columns__set
+              li - лучший ведущий на английском в Москве
+              li - найдет общий язык с любой аудиторией
+              li - голос LOVE RADIO и MTV
+        
   .footer
     .wrap
       h2.center#portfolio Наше портфолио

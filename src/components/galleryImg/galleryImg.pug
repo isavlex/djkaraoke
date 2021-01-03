@@ -2,5 +2,6 @@ mixin galleryImg(imgName, quantity)
   -var n = 0
   while n < quantity
     -n++
-    a(class=""  href="../img/gallery/big/" + imgName + n + ".jpg") 
-      img(class="myphotos columns__img-gallery" src="../img/gallery/min/" + imgName + "-min" + n + ".jpg" alt="Ведущий Евгений Александров")
+    a(class=""  href="../img/gallery/big/" + imgName + n + ".jpg")
+      .columns__img-frame 
+        img(class="myphotos columns__img-gallery" src="../img/gallery/min/" + imgName + n + "-min.jpg" alt="Ведущий Евгений Александров")

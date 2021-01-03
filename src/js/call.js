@@ -1,5 +1,6 @@
 import Cleave from 'cleave.js'
 import "cleave.js/dist/addons/cleave-phone.ru"
+import './jquery.arcticmodal.js'
 
 $('#callback').on('click', function () {
   var name = $('input[name=name]').val()
