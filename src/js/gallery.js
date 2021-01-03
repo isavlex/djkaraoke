@@ -8,9 +8,7 @@ lightGallery(document.getElementById("lightgallery"), {
 
 lightGallery(document.getElementById('video-gallery'), {
   thumbnail:true,
-  subHtmlSelectorRelative: true,
 })
 lightGallery(document.getElementById('leadings-video'), {
   thumbnail:true,
-  subHtmlSelectorRelative: true,
 })
