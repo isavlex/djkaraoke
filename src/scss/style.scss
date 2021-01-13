@@ -1,8 +1,10 @@
 @import '../components/components';
-@import 'app';
 @import 'callback';
 @import 'adaptive';
+@import 'fonts';
+@import 'vars';
 @import '../../node_modules/lightgallery.js/dist/css/lightgallery.min.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -10,11 +12,11 @@
 }
 
 body {
-  background-color: gray;
   color: white;
-  /*background: url(../img/back.jpg) no-repeat;
-  background-size: cover; */
-  font-family: open-sans, sans-serif;
+
+  background: rgb(2,1,56);
+  background: radial-gradient(circle, rgba(2,1,56,1) 16%, rgba(0,0,0,1) 75%);
+  font-family: $monsterrat;
 }
 
 .center {
@@ -30,6 +32,12 @@ h3 {
   max-width: 1024px;
   margin: 0 auto;
 }
+
+// .microphone {
+//   background-image: url(../img/microphone.png);
+//   background-repeat: no-repeat;
+//   background-position: bottom;
+// }
 /*you-tube*/
 .you-tube__relation {
   position: relative;
@@ -58,6 +66,7 @@ h3 {
 }
 
 .video-gallery__item {
+  margin-top: 20px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -75,11 +84,11 @@ h3 {
 
 /*Header*/
 
-.header {
-  background-image: url(../img/hall.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// .header {
+//   background-image: url(../img/hall.jpg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
 .h1-indent {
   padding-top: 130px;
@@ -102,7 +111,7 @@ h3 {
 }
 
 .columns__set {
-  font-style: italic;
+  // font-style: italic;
   list-style: none;
   padding: 10px;
 }
@@ -112,7 +121,7 @@ h3 {
 }
 
 .columns__price {
-  font-style: italic;
+  // font-style: italic;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -132,7 +141,7 @@ h3 {
 .columns__p-decor {
   padding-top: 10px;
   padding-bottom: 5px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -156,9 +165,6 @@ h3 {
 /* Sets */
 
 .sets {
-  background-image: url(../img/micher.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 80px;
 }
 /* Sets-end */
@@ -166,9 +172,6 @@ h3 {
 /* Leadings */
 
 .leadings {
-  background-image: url(../img/hall.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 80px;
 }
 
@@ -177,10 +180,14 @@ h3 {
 /* Footer */
 
 .footer {
-  background-image: url(../img/people.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background-image: url(../img/people.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
   padding-top: 80px;
+}
+
+.contacts {
+  margin-top: 20px;
 }
 
 .contacts__item {

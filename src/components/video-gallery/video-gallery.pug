@@ -1,0 +1,14 @@
+mixin video-gallery(options)
+  ul(class="video-gallery " + options.classUl id= options.idUl)
+    each item in options.items
+      li(data-src= item.videoLink class="video-gallery__item")
+        .video-gallery__poster
+          img(src="../img/pics/" + item.imgPlug , alt= item.imgAlt , class="video-gallery__img")
+          div
+            img(src="../img/play-button.png" class="video-gallery__plug" alt="plug")
+        if item.caption
+          .video-gallery__caption
+            h3.center= item.imgAlt
+            ul.columns__set
+              each skil in item.caption
+                li= skil

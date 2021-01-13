@@ -9,13 +9,28 @@ block varibles
   -var ymetricaPath = '../js/ymetrica.js'
   -var icon = '../img/ico.ico'
 
+  -
+    var itemsKaraoke = [
+      {videoLink: "https://www.youtube.com/embed/VtqUC3rvhks", imgPlug: "plug.jpg", imgAlt: "Караоке"},
+      {videoLink: "https://www.youtube.com/embed/bAYPViYuTGs", imgPlug: "plug2.jpg", imgAlt: "Караоке"}
+    ]
+  -var karaokeVideo = {idUl: "video-gallery", classUl: "columns", items: itemsKaraoke}
+  -var captionEa = ["- педагог по образованию", "- музыкант по призванию", "- воплотит любую Вашу идею"]
+  -var captionLc = ["- лучший ведущий на английском в Москве", "- найдет общий язык с любой аудиторией", "- голос LOVE RADIO и MTV"]
+  -
+    var itemsLeadings = [
+      {videoLink: "https://www.youtube.com/embed/TNwfr313Tsg", imgPlug: "plug-ea.jpg", imgAlt: "Ведущий Евгений Александров", caption: captionEa},
+      {videoLink: "https://www.youtube.com/embed/aMVRM9ZzuGk", imgPlug: "plug-lc.jpg", imgAlt: "Ведущий Лев Читков", caption: captionLc}
+    ]
+  -var leadingsVideo = {idUl: "leadings-video", classUl: "columns", items: itemsLeadings}
+
 block content
-  +jumping-buttons()
   +fb-root()
+  +jumping-buttons()
   +y-metrica(44743726)
   header.header
     +orderCall()
-    .wrap
+    .wrap.microphone
       +menu()
       h1.h1-indent.center
         strong Аренда караоке, ведущий и диджей музыканты на Ваше мероприятие<br />в Москве и области
@@ -74,44 +89,11 @@ block content
           p.columns__p-decor.center
             <strong>DJ</strong> + ЗВУК + СВЕТ + ШОУ<br />КОЛИЧЕСТВО НЕОГРАНИЧЕННО
           .columns__p-decor.center Индивидуально
-      ul#video-gallery.columns.video-gallery
-        li(data-src="https://www.youtube.com/embed/VtqUC3rvhks" class="video-gallery__item")
-          .video-gallery__poster
-            img(src="../img/pics/plug.jpg", alt="karaoke", class="video-gallery__img")
-            div
-              img(src="../img/play-button.png" class="video-gallery__plug" alt="plug")
-        li(data-src="https://www.youtube.com/embed/bAYPViYuTGs" class="video-gallery__item")
-          .video-gallery__poster
-            img(src="../img/pics/plug2.jpg", alt="dj", class="video-gallery__img")
-            div
-              img(src="../img/play-button.png" class="video-gallery__plug" alt="plug")
-
+      +video-gallery(karaokeVideo)
   .leadings
     .wrap
-      h2.center#leading
-      ul.columns#leadings-video.video-gallery
-        li(data-src="https://www.youtube.com/embed/TNwfr313Tsg" class="video-gallery__item")
-          .video-gallery__poster
-            img(src="../img/pics/plug-ea.jpg", alt="Ведущий Евгений Александров", class="video-gallery__img")
-            div
-              img(src="../img/play-button.png" class="video-gallery__plug" alt="plug")
-          .video-gallery__caption
-            h3.center <strong>Ведущий</strong> - Евгений Александров
-            ul.columns__set
-              li - педагог по образованию
-              li - музыкант по призванию
-              li - воплотит любую Вашу идею
-        li(data-src="https://www.youtube.com/embed/aMVRM9ZzuGk" class="video-gallery__item")
-          .video-gallery__poster
-            img(src="../img/pics/plug-lc.jpg", alt="Ведущий Лев Читков", class="video-gallery__img")
-            div
-              img(src="../img/play-button.png" class="video-gallery__plug" alt="plug")
-          .video-gallery__caption
-            h3.center <strong>Ведущий</strong> - Лев Читков
-            ul.columns__set
-              li - лучший ведущий на английском в Москве
-              li - найдет общий язык с любой аудиторией
-              li - голос LOVE RADIO и MTV
+      h2.center#leading Ведущие
+      +video-gallery(leadingsVideo)
         
   .footer
     .wrap
@@ -127,7 +109,7 @@ block content
           data-numposts="5"
         )
       .contacts
-        .center Контакты
+        h3.center Контакты
         ul
           li.contacts__item E-mail: <a class="white-link" href="mailto:e.alexandrov177@yandex.ru">e.alexandrov177@yandex.ru</a>
           li.contacts__item Адрес: ул. Нижняя Красносельская, д. 45/17
